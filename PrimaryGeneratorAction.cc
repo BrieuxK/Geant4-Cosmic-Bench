@@ -124,15 +124,15 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
     G4Exception("PrimaryGeneratorAction::GeneratePrimaries()",
      "MyCode0002",JustWarning,msg);
   }
-
-  G4double size = 0.8;
+  // On choisit un pt de départ aléatoire sur une partie du plan XY de l'enveloppe
+  G4double size = 0.8; // On sélectionne 80% du plan XY
   G4double x0 = size * envSizeXY * (G4UniformRand()-0.5);
   G4double y0 = size * envSizeXY * (G4UniformRand()-0.5);
   G4double z0 = -0.5 * envSizeZ;
 
   fParticleGun->SetParticlePosition(G4ThreeVector(x0,y0,z0));
 
-  G4ThreeVector v = DirectionRandom();  
+  G4ThreeVector v = DirectionRandom();  // Direction "aléatoire" (direction -z exclue) du muon à partir du pt de départ déterminé plus haut
   v.set(v.z(), v.x(), v.y());
 
   fParticleGun->SetParticleMomentumDirection(v); 
