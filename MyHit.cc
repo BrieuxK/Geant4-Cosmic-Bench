@@ -1,34 +1,15 @@
+/*
+Package nécessaires pour le test dans le main()
+Pas utile pour la classe en elle-même
 #include <ostream>
 #include <string>
 #include <iostream>
 #include <fstream>
 #include <algorithm>
 #include <numeric>
-
+*/
 #include "MyHit.hh"
 
-/*
-class MyHit
-{
-public:
-
-    //MyHit(); 
-    double fEdep; // Energy deposition
-    double hitTime; 
-    //int channelNbr;
-    
-    double GetEdep();
-    void SetEdep(double edep);
-    
-    double GetHitTime();
-    void SetHitTime(double hit_time);
-    
-    double GetChannelNbr();
-    void SetChannelNbr(int channel_number);
-    
-    
-};
-*/
 
 
 double MyHit::GetEdep() {return fEdep;}
@@ -44,6 +25,8 @@ int MyHit::GetChannelNbr() {return channelNbr;}
 void MyHit::SetChannelNbr(int channel_number) {channelNbr = channel_number;}
 
 
+/*
+Simples tests
 
 using namespace std;
 
@@ -92,3 +75,4 @@ int main() {
     }
     
 }
+*/
