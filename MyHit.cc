@@ -5,9 +5,9 @@
 #include <algorithm>
 #include <numeric>
 
-//#include "MyHit.hh"
+#include "MyHit.hh"
 
-
+/*
 class MyHit
 {
 public:
@@ -28,23 +28,23 @@ public:
     
     
 };
-
-/*
-class MyHit
-{  
-double MyHit::GetEdep() {return fEdep;};
-
-void MyHit::SetEdep(double edep) {fEdep = edep;};
-
-double MyHit::GetHitTime() {return hitTime;};
-
-void MyHit::SetHitTime(double hit_time) {hitTime = hit_time;};
-
-double MyHit::GetChannelNbr() {return channelNbr;};
-
-void MyHit::SetChannelNbr(double channel_number) {channelNbr = channel_number;};
-}
 */
+
+
+double MyHit::GetEdep() {return fEdep;}
+
+void MyHit::SetEdep(double edep) {fEdep = edep;}
+
+double MyHit::GetHitTime() {return hitTime;}
+
+void MyHit::SetHitTime(double hit_time) {hitTime = hit_time;}
+
+int MyHit::GetChannelNbr() {return channelNbr;}
+
+void MyHit::SetChannelNbr(int channel_number) {channelNbr = channel_number;}
+
+
+
 using namespace std;
 
 int main() {
