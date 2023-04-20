@@ -12,6 +12,10 @@
 class SlabHit
 {
     public:
+        SlabHit() = default;
+        SlabHit(const CalorHit&) = default;
+        ~SlabHit() override = default;
+
         
         G4double GetEdep() {return fEdep;};
         void SetEdep(double edep) {fEdep = edep;};
@@ -32,5 +36,7 @@ class SlabHit
         G4int panelNbr;
     
 };
+
+using SlabHitsCollection = G4THitsCollection<CalorHit>;
 
 #endif
