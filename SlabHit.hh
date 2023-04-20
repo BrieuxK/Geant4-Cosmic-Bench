@@ -37,6 +37,6 @@ class SlabHit
     
 };
 
-using SlabHitsCollection = G4THitsCollection<CalorHit>;
+using SlabHitsCollection = G4THitsCollection<SlabHit>;
 
 #endif
