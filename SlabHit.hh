@@ -1,5 +1,5 @@
-#ifndef MYHIT_HH
-#define MYHIT_HH
+#ifndef SLABHIT_HH
+#define SLABHIT_HH
 
 class SlabHit
 {
