@@ -12,7 +12,7 @@ Analysis of a particle detector, the Cosmic Bench, and numerical replication usi
 
 Geometry :
 
-![Screenshot_20230615_105722_Messenger](https://github.com/user-attachments/assets/64e7cf37-ac04-4bd3-8275-58c51cb0a583)
+<img src="https://github.com/user-attachments/assets/64e7cf37-ac04-4bd3-8275-58c51cb0a583" width="50%" />
 
 
 <!-- Row 1: Theta -->
